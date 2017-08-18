@@ -216,7 +216,7 @@ cutoff.distribution <- function(marker, npoints=1000, nbreaks=100) {
   median.marker <- median(marker)
   cluster <- 1 + as.numeric(marker > median.marker)
   fit <- flexmix::flexmix(marker~1, k=2, cluster=cluster)
-  param <- parameters(fit)
+  param <- flexmix::parameters(fit)
   tab <- summary(fit)@comptab
   if (nrow(tab) != 2) stop("Could not fit mixture model.")
   min.x <- min(marker)
@@ -415,7 +415,7 @@ plothistogram <- function(marker, cutoff=NULL, gauss=TRUE, npoints=1000, nbreaks
     median.marker <- median(marker)
     cluster <- 1 + as.numeric(marker > median.marker)
     fit <- flexmix::flexmix(marker~1, k=2, cluster=cluster)
-    param <- parameters(fit)
+    param <- flexmix::parameters(fit)
     tab <- summary(fit)@comptab
     if (nrow(tab) != 2) stop("Could not fit mixture model.")
     d.x <- max.x - min.x

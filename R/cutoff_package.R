@@ -7,7 +7,7 @@
 #' @importFrom grDevices colors
 #' @importFrom graphics axis box legend lines par plot points text
 #' @importFrom mvtnorm pmvnorm GenzBretz
-#' @importFrom flexmix flexmix
+#' @importFrom flexmix flexmix parameters
 #'
 #' @import ggplot2
 #' @import stats
