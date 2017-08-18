@@ -7,12 +7,13 @@
 #' @importFrom grDevices colors
 #' @importFrom graphics axis box legend lines par plot points text
 #' @importFrom mvtnorm pmvnorm GenzBretz
-#' @importFrom flexmix flexmix parameters
 #'
 #' @import ggplot2
 #' @import stats
 #' @import binom
 #' @import survival
+#' @import methods
+#' @import flexmix
 #'
 #' @description
 #'

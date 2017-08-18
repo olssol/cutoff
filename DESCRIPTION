@@ -6,6 +6,7 @@ Description: What the package does (one paragraph).
 Depends:
     R (>= 3.3.2),
     shiny (>= 1.0),
+    methods,
     shinythemes,
     DT,
     sqldf,
